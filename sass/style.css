@@ -377,4 +377,47 @@ footer p {
   align-items: center;
   gap: 3rem;
   margin-top: 3%;
+}
+#therapy .therapy #about .about_card_list ul li {
+  list-style: disc;
+  line-height: 25px;
+  font-size: 1.2rem;
+}
+
+/*
+  =============== 
+  Footer Section
+  ===============
+  */
+#therapy .therapy #contact .contact {
+  padding: 50px;
+  background: rgba(161, 193, 202, 0.5803921569);
+  height: 43.5mnnnnnvh;
+}
+#therapy .therapy #contact .contact .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 100%;
+}
+#therapy .therapy #contact .contact .circle_1, #therapy .therapy #contact .contact .circle_2, #therapy .therapy #contact .contact .circle_3, #therapy .therapy #contact .contact .circle_4, #therapy .therapy #contact .contact .circle_5 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+#therapy .therapy #contact .contact .circle_1 {
+  background-color: #ccc6c6;
+}
+#therapy .therapy #contact .contact .circle_2 {
+  background-color: #fadcd6;
+}
+#therapy .therapy #contact .contact .circle_3 {
+  background-color: #e5c7b5;
+}
+#therapy .therapy #contact .contact .circle_4 {
+  background-color: #b6d1d9;
+}
+#therapy .therapy #contact .contact .circle_5 {
+  background-color: #e8eff1;
 }/*# sourceMappingURL=style.css.map */

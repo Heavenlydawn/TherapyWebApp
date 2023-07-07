@@ -435,6 +435,59 @@ footer {
       align-items: center;
       gap: 3rem;
       margin-top: 3%;
+
+      &_list {
+        ul {
+          li {
+            list-style: disc;
+            line-height: 25px;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+/*
+  =============== 
+  Footer Section
+  ===============
+  */
+#therapy .therapy {
+  #contact .contact {
+    padding: 50px;
+    background: #a1c1ca94;
+    height: 43.5mnnnnnvh;
+    .circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap:2rem;
+      height: 100%;
+      &_1,
+      &_2,
+      &_3,
+      &_4,
+      &_5 {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+      }
+      &_1 {
+        background-color: $esteem_1;
+      }
+      &_2 {
+        background-color: $esteem_2;
+      }
+      &_3 {
+        background-color: $esteem_3;
+      }
+      &_4 {
+        background-color: $esteem_4;
+      }
+      &_5 {
+        background-color: $esteem_5;
+      }
     }
   }
 }
