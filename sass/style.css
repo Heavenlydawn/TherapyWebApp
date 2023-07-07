@@ -473,6 +473,11 @@ footer p {
   background: #f7f6f6;
   padding: 50px;
   height: 70vh;
+  /*
+  =============== 
+  Media Query
+  ===============
+  */
 }
 #therapy .therapy #approach .approach_header h3 {
   font-size: 3rem;
@@ -486,6 +491,19 @@ footer p {
 #therapy .therapy #approach .approach_content p {
   font-size: 1.2rem;
   line-height: 35px;
+}
+@media screen and (max-width: 500px) {
+  #therapy .therapy #approach .approach {
+    text-align: left;
+    padding: 10px;
+    height: auto;
+  }
+  #therapy .therapy #approach .approach_header h3 {
+    font-size: 2rem;
+  }
+  #therapy .therapy #approach .approach_content {
+    width: 100%;
+  }
 }
 
 /*
@@ -550,7 +568,7 @@ footer p {
 
 /*
   =============== 
-  Footer Section
+  Contact Section
   ===============
   */
 #therapy .therapy #contact .contact {
