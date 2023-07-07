@@ -32,7 +32,6 @@ Header Section
 ===============
 */
 #therapy .therapy {
-  max-width: 1500px;
   width: calc(100vw - 20px);
   margin: 0 auto;
   /*
@@ -40,20 +39,44 @@ Header Section
   Hero Section
   ===============
   */
+  /*
+  =============== 
+  Therapy_Type Section
+  ===============
+  */
+  /*
+  =============== 
+  Getting Help Section
+  ===============
+  */
+  /*
+  =============== 
+  Testimonial Section
+  ===============
+  */
+  /*
+  =============== 
+  Footer Section
+  ===============
+  */
 }
 #therapy .therapy header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 10px 0;
 }
 #therapy .therapy header nav ul {
   display: flex;
+  align-items: center;
   gap: 2rem;
   font-size: 1.2rem;
 }
 #therapy .therapy header nav ul li a {
   color: #000000;
+}
+#therapy .therapy header nav ul li a:hover {
+  color: #899da3;
 }
 #therapy .therapy header .user {
   display: flex;
@@ -62,11 +85,177 @@ Header Section
 }
 #therapy .therapy header .user-img img {
   border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 #therapy .therapy header .user span {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  color: #899da3;
 }
 #therapy .therapy #hero .hero {
-  height: 50vh;
+  position: relative;
+  height: 70vh;
   background: linear-gradient(0deg, rgb(232, 239, 241), 50%, rgb(255, 255, 255) 50%);
+}
+#therapy .therapy #hero .hero_content {
+  position: absolute;
+  top: 35%;
+  left: 20%;
+}
+#therapy .therapy #hero .hero_content h1 {
+  font-size: 10rem;
+}
+#therapy .therapy #hero .hero_content p {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 500;
+}
+#therapy .therapy #therapy_type .therapy_type .therapy_cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card {
+  display: grid;
+  text-align: center;
+}
+#therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_1, #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_2, #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_3, #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_4, #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_5, #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_7 {
+  height: 400px;
+  padding: 50px;
+}
+#therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_1 .num, #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_2 .num, #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_3 .num, #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_4 .num, #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_5 .num, #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_7 .num {
+  font-size: 3rem;
+  font-weight: bold;
+}
+#therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_1 h3, #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_2 h3, #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_3 h3, #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_4 h3, #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_5 h3, #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_7 h3 {
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+#therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_1 p, #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_2 p, #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_3 p, #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_4 p, #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_5 p, #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_7 p {
+  font-size: 1.2rem;
+  line-height: 25px;
+}
+#therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_1 a, #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_2 a, #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_3 a, #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_4 a, #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_5 a, #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_7 a {
+  color: #000000;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #000000;
+  padding-top: 5%;
+}
+#therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_1 {
+  background-color: #ccc6c6;
+}
+#therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_2 {
+  background-color: #f0eded;
+}
+#therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_3 {
+  background-color: #fadcd6;
+}
+#therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_4 {
+  background-color: #e5c7b5;
+}
+#therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_5 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #f7f6f6;
+}
+#therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_6 .therapist img {
+  width: 100%;
+  height: 100%;
+}
+#therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_7 {
+  background-color: #ccc6c6;
+}
+#therapy .therapy #help .help {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+  margin-top: 10%;
+}
+#therapy .therapy #help .help_header {
+  text-align: center;
+}
+#therapy .therapy #help .help_header h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 3% 0;
+}
+#therapy .therapy #help .help_header p {
+  font-size: 1.2rem;
+  line-height: 25px;
+}
+#therapy .therapy #help .help_types {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+#therapy .therapy #help .help_types .help_type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+#therapy .therapy #help .help_types .help_type h3 {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+#therapy .therapy #help .help_types .help_type .one {
+  background-color: #ccc6c6;
+}
+#therapy .therapy #help .help_types .help_type .two {
+  background-color: #fadcd6;
+}
+#therapy .therapy #help .help_types .help_type .three {
+  background-color: #e5c7b5;
+}
+#therapy .therapy #help .help_types .help_type .four {
+  background-color: #b6d1d9;
+}
+#therapy .therapy #help .help_types .help_type .five {
+  background-color: #e8eff1;
+}
+#therapy .therapy #help .help_types .help_type p {
+  font-size: 1.2rem;
+}
+#therapy .therapy #help .help .resources {
+  margin: 3% 0;
+}
+#therapy .therapy #help .help .resources a {
+  color: #000000;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 5px;
+}
+#therapy .therapy #testimonial .testimonial {
+  text-align: center;
+  padding: 50px;
+  background-color: #fadcd6;
+}
+#therapy .therapy #testimonial .testimonial img {
+  width: 70px;
+  height: 70px;
+}
+#therapy .therapy #testimonial .testimonial .big {
+  font-size: 2rem;
+  font-weight: bold;
+  width: 70%;
+  margin: 0 auto;
+}
+#therapy .therapy #testimonial .testimonial .test_name {
+  font-size: 1.5rem;
+  margin-top: 5%;
+}
+#therapy .therapy footer #user_details .user_details .location .socials a img {
+  width: 30px;
+  height: 30px;
 }/*# sourceMappingURL=style.css.map */

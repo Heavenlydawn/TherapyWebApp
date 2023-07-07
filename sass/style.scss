@@ -48,22 +48,26 @@ Header Section
 */
 
 #therapy .therapy {
-  max-width: 1500px;
+  // max-width: 1800px;
   width: calc(100vw - 20px);
   margin: 0 auto;
   header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding:10px 0;
+    padding: 10px 0;
     nav {
       ul {
         display: flex;
+        align-items: center;
         gap: 2rem;
         font-size: 1.2rem;
-        li{
-          a{
-            color:$black;
+        li {
+          a {
+            color: $black;
+            &:hover {
+              color: #899da3;
+            }
           }
         }
       }
@@ -76,10 +80,13 @@ Header Section
       &-img {
         img {
           border-radius: 50%;
+          width: 40px;
+          height: 40px;
         }
       }
-      span{
-        font-size: 1.2rem;
+      span {
+        font-size: 1.3rem;
+        color: #899da3;
       }
     }
   }
@@ -90,7 +97,227 @@ Header Section
   ===============
   */
   #hero .hero {
-    height:50vh;
-    background: linear-gradient(0deg, rgba(232,239,241,1),  50%,  rgba(255,255,255,1)50%);
+    position: relative;
+    height: 70vh;
+    background: linear-gradient(
+      0deg,
+      rgba(232, 239, 241, 1),
+      50%,
+      rgba(255, 255, 255, 1) 50%
+    );
+    &_content {
+      position: absolute;
+      top: 35%;
+      left: 20%;
+      h1 {
+        font-size: 10rem;
+      }
+      p {
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 500;
+      }
+    }
+  }
+
+  /*
+  =============== 
+  Therapy_Type Section
+  ===============
+  */
+  #therapy_type .therapy_type {
+    .therapy_cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      .therapy_card {
+        display: grid;
+        text-align: center;
+        &_1,
+        &_2,
+        &_3,
+        &_4,
+        &_5,
+        &_7 {
+          height: 400px;
+          padding: 50px;
+          .num {
+            font-size: 3rem;
+            font-weight: bold;
+          }
+          h3 {
+            font-size: 2.3rem;
+            font-weight: 500;
+          }
+          p {
+            font-size: 1.2rem;
+            line-height: 25px;
+          }
+          a {
+            color: $black;
+            font-size: 1.2rem;
+            border-bottom: 1px solid $black;
+            padding-top: 5%;
+          }
+        }
+        &_1 {
+          // padding: 55px;
+          background-color: $individual_therapy;
+        }
+        &_2 {
+          // padding: 67px;
+          background-color: $couples_therapy;
+        }
+        &_3 {
+          // padding: 43px;
+          background-color: $sex-therapy;
+        }
+        &_4 {
+          // padding: 55px;
+          background-color: $family_therapy;
+        }
+        &_5 {
+          // grid-column: 1 / span 3;
+          grid-column-start: 1;
+          grid-column-end: 3;
+          background-color: $approach;
+          // padding: 50px;
+        }
+        &_6 {
+          .therapist {
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        &_7 {
+          // padding: 50px;
+          background-color: $individual_therapy;
+        }
+      }
+    }
+  }
+  /*
+  =============== 
+  Getting Help Section
+  ===============
+  */
+  #help .help {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    margin-top: 10%;
+    &_header {
+      text-align: center;
+      h3 {
+        font-size: 3rem;
+        font-weight: 500;
+        margin: 3% 0;
+      }
+      p {
+        font-size: 1.2rem;
+        line-height: 25px;
+      }
+    }
+    &_types {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 2rem;
+      .help_type {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+
+        h3 {
+          font-size: 2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 50px;
+          width: 50px;
+          border-radius: 50%;
+        }
+        .one {
+          background-color: $esteem_1;
+        }
+        .two {
+          background-color: $esteem_2;
+        }
+        .three {
+          background-color: $esteem_3;
+        }
+        .four {
+          background-color: $esteem_4;
+        }
+        .five {
+          background-color: $esteem_5;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .resources {
+      margin:3% 0;
+      a {
+        color: $black;
+        font-size: 1.2rem;
+        border-bottom: 1px solid $black;
+        padding-bottom: 5px;
+      }
+    }
+  }
+
+  /*
+  =============== 
+  Testimonial Section
+  ===============
+  */
+  #testimonial .testimonial {
+    text-align: center;
+   padding: 50px;
+    background-color: $bg_testimonial;
+    img {
+      width: 70px;
+      height: 70px;
+    }
+  
+    .big {
+      font-size: 2rem;
+      font-weight: bold;
+      width: 70%;
+      margin: 0 auto;
+    }
+    .test_name{
+      font-size: 1.5rem;
+      margin-top: 5%;
+    }
+  }
+  /*
+  =============== 
+  Footer Section
+  ===============
+  */
+  footer {
+    #user_details .user_details {
+      .location {
+        .socials {
+          a {
+            img {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
   }
 }
