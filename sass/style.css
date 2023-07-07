@@ -32,6 +32,7 @@ Header Section
 ===============
 */
 #therapy .therapy {
+  max-width: 1800px;
   width: calc(100vw - 20px);
   margin: 0 auto;
   /*
@@ -563,4 +564,12 @@ footer p {
   =============== 
   Blog Section
   ===============
-  *//*# sourceMappingURL=style.css.map */
+  */
+#therapy .therapy #blog .blog_header {
+  text-align: center;
+  padding: 50px;
+}
+#therapy .therapy #blog .blog_header h3 {
+  font-size: 3rem;
+  font-weight: 500;
+}/*# sourceMappingURL=style.css.map */
