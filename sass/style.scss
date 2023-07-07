@@ -57,6 +57,9 @@ Header Section
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    .bars {
+      display: none;
+    }
     nav {
       ul {
         display: flex;
@@ -91,6 +94,38 @@ Header Section
       }
     }
   }
+  /*
+  =============== 
+  Media Query
+  ===============
+  */
+
+  @media screen and (max-width: 500px) {
+    header {
+      .bars {
+        display: block;
+      }
+      nav {
+        ul {
+          display: none;
+        }
+      }
+      .user {
+        justify-content: space-between;
+        width: 100%;
+
+        &-img {
+          display: flex;
+          justify-content: space-between;
+          gap:5rem;
+          width: 100%;
+        }
+        span {
+          display: none;
+        }
+      }
+    }
+  }
 
   /*
   =============== 
@@ -119,8 +154,25 @@ Header Section
         font-weight: 500;
       }
     }
-  }
 
+    /*
+      =============== 
+      Media Query
+      ===============
+      */
+    @media screen and (max-width: 500px) {
+      &_content {
+        top: 30%;
+        left: 25%;
+        h1 {
+          font-size: 3rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
   /*
   =============== 
   Therapy_Type Section
@@ -186,6 +238,34 @@ Header Section
       }
       &_7 {
         background-color: $individual_therapy;
+      }
+
+      /*
+  =============== 
+  Media Query
+  ===============
+  */
+
+      @media screen and (max-width: 500px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &_1,
+        &_2,
+        &_3,
+        &_4,
+        &_5,
+        &_7 {
+          height: auto;
+          padding: 10px;
+          .num {
+            font-size: 2rem;
+          }
+          h3 {
+            font-size: 2rem;
+          }
+        }
       }
     }
   }
@@ -267,6 +347,23 @@ Header Section
       padding-bottom: 5px;
     }
   }
+
+  /*
+  =============== 
+  Media Query
+  ===============
+  */
+  @media screen and (max-width: 500px) {
+    &_header {
+      h3 {
+        font-size: 2rem;
+      }
+    }
+    &_types {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 }
 
 /*
@@ -292,6 +389,28 @@ Header Section
   .test_name {
     font-size: 1.5rem;
     margin-top: 5%;
+  }
+  /*
+  =============== 
+  Media Query
+  ===============
+  */
+  @media screen and (max-width: 500px) {
+    text-align: left;
+    padding: 10px;
+    background-color: $bg_testimonial;
+    img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .big {
+      font-size: 1rem;
+      width: 100%;
+    }
+    .test_name {
+      font-size: 1rem;
+    }
   }
 }
 /*
@@ -356,6 +475,19 @@ Header Section
       }
     }
   }
+  /*
+  =============== 
+  Media Query
+  ===============
+  */
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    .user_contact {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 100%;
+    }
+  }
 }
 
 /*
@@ -372,6 +504,18 @@ footer {
   background-color: $bg_footer;
   p {
     font-size: 1.2rem;
+  }
+  /*
+  =============== 
+  Media Query
+  ===============
+  */
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    padding: 20px;
+    p{
+      font-size: 1rem;
+    }
   }
 }
 
@@ -493,3 +637,9 @@ footer {
     }
   }
 }
+
+/*
+  =============== 
+  Blog Section
+  ===============
+  */
