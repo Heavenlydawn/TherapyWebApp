@@ -296,6 +296,7 @@ Header Section
   border-bottom: 1px solid #000000;
   padding: 20px 0;
   width: 90%;
+  font-size: 1.2rem;
 }
 #user_details .user_details .user_contact input:hover,
 #user_details .user_details .user_contact textarea:hover {
@@ -303,6 +304,7 @@ Header Section
 }
 #user_details .user_details .user_contact .message textarea {
   width: 190%;
+  padding: 0;
 }
 
 /*
@@ -392,7 +394,7 @@ footer p {
 #therapy .therapy #contact .contact {
   padding: 50px;
   background: rgba(161, 193, 202, 0.5803921569);
-  height: 43.5vh;
+  height: 37vh;
 }
 #therapy .therapy #contact .contact .circle {
   display: flex;

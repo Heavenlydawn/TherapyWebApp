@@ -344,6 +344,7 @@ Header Section
       border-bottom: 1px solid $black;
       padding: 20px 0;
       width: 90%;
+      font-size: 1.2rem;
       &:hover {
         border-bottom: 2px solid $black;
       }
@@ -351,6 +352,7 @@ Header Section
     .message {
       textarea {
         width: 190%;
+        padding: 0;
       }
     }
   }
@@ -457,12 +459,12 @@ footer {
   #contact .contact {
     padding: 50px;
     background: #a1c1ca94;
-    height: 43.5vh;
+    height: 37vh;
     .circle {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap:2rem;
+      gap: 2rem;
       height: 100%;
       &_1,
       &_2,
