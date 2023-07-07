@@ -497,6 +497,11 @@ footer p {
   background: #f0eded;
   margin: 0 auto;
   padding: 50px;
+  /*
+  =============== 
+  Media Query
+  ===============
+  */
 }
 #therapy .therapy #about .about_header {
   text-align: center;
@@ -523,6 +528,24 @@ footer p {
   list-style: disc;
   line-height: 25px;
   font-size: 1.2rem;
+}
+@media screen and (max-width: 500px) {
+  #therapy .therapy #about .about {
+    padding: 20px;
+  }
+  #therapy .therapy #about .about_header h3 {
+    font-size: 2rem;
+  }
+  #therapy .therapy #about .about_header p {
+    width: 100%;
+  }
+  #therapy .therapy #about .about_card {
+    flex-direction: column;
+  }
+  #therapy .therapy #about .about_card_img img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /*
