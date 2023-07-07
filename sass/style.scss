@@ -340,6 +340,7 @@ Header Section
   }
   .resources {
     margin: 3% 0;
+
     a {
       color: $black;
       font-size: 1.2rem;
@@ -357,6 +358,9 @@ Header Section
     &_header {
       h3 {
         font-size: 2rem;
+      }
+      p{
+        text-align: left;
       }
     }
     &_types {
@@ -678,18 +682,25 @@ footer {
           width: 500px;
           background: $neutral;
           padding: 30px;
-          .user{
+          .user {
             display: flex;
             align-items: center;
             justify-content: space-between;
             font-size: 1.2rem;
           }
-          .content{
-            h3{
+          .content {
+            h3 {
               font-size: 2.5rem;
               font-weight: 500;
-              a{
+              a {
                 color: $black;
+                &:hover {
+                  color: #899da3;
+                }
+              }
+              p {
+                font-size: 1.2rem;
+                line-height: 25px;
               }
             }
           }
