@@ -34,6 +34,7 @@ General selector
   padding: 0;
   box-sizing: border-box;
   font-family: $font-family;
+  // overflow-x: hidden;
 }
 li {
   list-style: none;
@@ -55,7 +56,7 @@ Header Section
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 0 20px;
     nav {
       ul {
         display: flex;
@@ -107,8 +108,8 @@ Header Section
     );
     &_content {
       position: absolute;
-      top: 35%;
-      left: 20%;
+      top: 38%;
+      left: 28%;
       h1 {
         font-size: 10rem;
       }
@@ -130,7 +131,6 @@ Header Section
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       .therapy_card {
-        display: grid;
         text-align: center;
         &_1,
         &_2,
@@ -160,30 +160,25 @@ Header Section
           }
         }
         &_1 {
-          // padding: 55px;
           background-color: $individual_therapy;
         }
         &_2 {
-          // padding: 67px;
           background-color: $couples_therapy;
         }
         &_3 {
-          // padding: 43px;
           background-color: $sex-therapy;
         }
         &_4 {
-          // padding: 55px;
           background-color: $family_therapy;
         }
         &_5 {
-          // grid-column: 1 / span 3;
-          grid-column-start: 1;
-          grid-column-end: 3;
+          grid-column: 1 / 3;
           background-color: $approach;
-          // padding: 50px;
         }
         &_6 {
           .therapist {
+            width: 100%;
+            height: 400px;
             img {
               width: 100%;
               height: 100%;
@@ -191,7 +186,6 @@ Header Section
           }
         }
         &_7 {
-          // padding: 50px;
           background-color: $individual_therapy;
         }
       }
@@ -266,7 +260,7 @@ Header Section
       }
     }
     .resources {
-      margin:3% 0;
+      margin: 3% 0;
       a {
         color: $black;
         font-size: 1.2rem;
@@ -283,41 +277,100 @@ Header Section
   */
   #testimonial .testimonial {
     text-align: center;
-   padding: 50px;
+    padding: 50px;
     background-color: $bg_testimonial;
     img {
       width: 70px;
       height: 70px;
     }
-  
+
     .big {
       font-size: 2rem;
-      font-weight: bold;
+      font-weight: 500;
       width: 70%;
       margin: 0 auto;
     }
-    .test_name{
+    .test_name {
       font-size: 1.5rem;
       margin-top: 5%;
     }
   }
   /*
   =============== 
+  User Details Section
+  ===============
+  */
+
+  #user_details .user_details {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding: 50px 0;
+    .location {
+      p {
+        font-size: 1.2rem;
+        line-height: 25px;
+      }
+      .user_contact {
+        a {
+          color: $black;
+          line-height: 25px;
+          font-size: 1.2rem;
+        }
+      }
+      .socials {
+        padding: 15px 0;
+        a {
+          img {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+    .days {
+      p {
+        font-size: 1.2rem;
+        line-height: 25px;
+      }
+    }
+    .user_contact {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 30%;
+      input,
+      textarea {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid $black;
+        padding: 20px 0;
+        width: 90%;
+        &:hover {
+          border-bottom: 2px solid $black;
+        }
+      }
+      .message {
+        textarea {
+          width: 190%;
+        }
+      }
+    }
+  }
+
+  /*
+  =============== 
   Footer Section
   ===============
   */
   footer {
-    #user_details .user_details {
-      .location {
-        .socials {
-          a {
-            img {
-              width: 30px;
-              height: 30px;
-            }
-          }
-        }
-      }
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg_footer;
+    p {
+      font-size: 1.2rem;
     }
   }
 }

@@ -56,6 +56,11 @@ Header Section
   */
   /*
   =============== 
+  User Details Section
+  ===============
+  */
+  /*
+  =============== 
   Footer Section
   ===============
   */
@@ -64,7 +69,7 @@ Header Section
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  padding: 0 20px;
 }
 #therapy .therapy header nav ul {
   display: flex;
@@ -99,8 +104,8 @@ Header Section
 }
 #therapy .therapy #hero .hero_content {
   position: absolute;
-  top: 35%;
-  left: 20%;
+  top: 38%;
+  left: 28%;
 }
 #therapy .therapy #hero .hero_content h1 {
   font-size: 10rem;
@@ -115,7 +120,6 @@ Header Section
   grid-template-columns: repeat(4, 1fr);
 }
 #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card {
-  display: grid;
   text-align: center;
 }
 #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_1, #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_2, #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_3, #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_4, #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_5, #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_7 {
@@ -153,9 +157,12 @@ Header Section
   background-color: #e5c7b5;
 }
 #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_5 {
-  grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column: 1/3;
   background-color: #f7f6f6;
+}
+#therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_6 .therapist {
+  width: 100%;
+  height: 400px;
 }
 #therapy .therapy #therapy_type .therapy_type .therapy_cards .therapy_card_6 .therapist img {
   width: 100%;
@@ -247,7 +254,7 @@ Header Section
 }
 #therapy .therapy #testimonial .testimonial .big {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 500;
   width: 70%;
   margin: 0 auto;
 }
@@ -255,7 +262,60 @@ Header Section
   font-size: 1.5rem;
   margin-top: 5%;
 }
-#therapy .therapy footer #user_details .user_details .location .socials a img {
+#therapy .therapy #user_details .user_details {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding: 50px 0;
+}
+#therapy .therapy #user_details .user_details .location p {
+  font-size: 1.2rem;
+  line-height: 25px;
+}
+#therapy .therapy #user_details .user_details .location .user_contact a {
+  color: #000000;
+  line-height: 25px;
+  font-size: 1.2rem;
+}
+#therapy .therapy #user_details .user_details .location .socials {
+  padding: 15px 0;
+}
+#therapy .therapy #user_details .user_details .location .socials a img {
   width: 30px;
   height: 30px;
+}
+#therapy .therapy #user_details .user_details .days p {
+  font-size: 1.2rem;
+  line-height: 25px;
+}
+#therapy .therapy #user_details .user_details .user_contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 30%;
+}
+#therapy .therapy #user_details .user_details .user_contact input,
+#therapy .therapy #user_details .user_details .user_contact textarea {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000000;
+  padding: 20px 0;
+  width: 90%;
+}
+#therapy .therapy #user_details .user_details .user_contact input:hover,
+#therapy .therapy #user_details .user_details .user_contact textarea:hover {
+  border-bottom: 2px solid #000000;
+}
+#therapy .therapy #user_details .user_details .user_contact .message textarea {
+  width: 190%;
+}
+#therapy .therapy footer {
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e8eff1;
+}
+#therapy .therapy footer p {
+  font-size: 1.2rem;
 }/*# sourceMappingURL=style.css.map */
