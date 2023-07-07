@@ -18,8 +18,55 @@ General selector
   font-family: "Wix Madefor Text", sans-serif;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 /*
 =============== 
-Hero Section
+Header Section
 ===============
-*//*# sourceMappingURL=style.css.map */
+*/
+#therapy .therapy {
+  max-width: 1500px;
+  width: calc(100vw - 20px);
+  margin: 0 auto;
+  /*
+  =============== 
+  Hero Section
+  ===============
+  */
+}
+#therapy .therapy header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+#therapy .therapy header nav ul {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.2rem;
+}
+#therapy .therapy header nav ul li a {
+  color: #000000;
+}
+#therapy .therapy header .user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#therapy .therapy header .user-img img {
+  border-radius: 50%;
+}
+#therapy .therapy header .user span {
+  font-size: 1.2rem;
+}
+#therapy .therapy #hero .hero {
+  height: 50vh;
+  background: linear-gradient(0deg, rgb(232, 239, 241), 50%, rgb(255, 255, 255) 50%);
+}/*# sourceMappingURL=style.css.map */

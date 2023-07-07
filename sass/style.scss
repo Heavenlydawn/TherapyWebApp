@@ -1,27 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Great+Vibes&family=Hanken+Grotesk:wght@500;700;800&family=Manrope:wght@500;600;700;800&family=Nunito:wght@600;700;800&family=Wix+Madefor+Text:wght@400;500;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Great+Vibes&family=Hanken+Grotesk:wght@500;700;800&family=Manrope:wght@500;600;700;800&family=Nunito:wght@600;700;800&family=Wix+Madefor+Text:wght@400;500;800&display=swap");
 /*
 =============== 
 Variables Section
 ===============
 */
-$font-family:'Wix Madefor Text', sans-serif;
-$neutral:#ffffff;
-$black:#000000;
-$hero_bg_1:#FFFFFF;
-$hero_bg_2:#E8EFF1;
-$individual_therapy:#CCC6C6;
-$couples_therapy:#F0EDED;
-$sex-therapy:#FADCD6;
-$family_therapy:#E5C7B5;
-$approach:#F7F6F6;
-$esteem_1:#CCC6C6;
-$esteem_2:#FADCD6;
-$esteem_3:#E5C7B5;
-$esteem_4:#B6D1D9;
-$esteem_5:#E8EFF1;
-$bg_testimonial:#FADCD6;
-$bg_footer:#E8EFF1;
-
+$font-family: "Wix Madefor Text", sans-serif;
+$neutral: #ffffff;
+$black: #000000;
+$hero_bg_1: #ffffff;
+$hero_bg_2: #e8eff1;
+$individual_therapy: #ccc6c6;
+$couples_therapy: #f0eded;
+$sex-therapy: #fadcd6;
+$family_therapy: #e5c7b5;
+$approach: #f7f6f6;
+$esteem_1: #ccc6c6;
+$esteem_2: #fadcd6;
+$esteem_3: #e5c7b5;
+$esteem_4: #b6d1d9;
+$esteem_5: #e8eff1;
+$bg_testimonial: #fadcd6;
+$bg_footer: #e8eff1;
 
 /*
 =============== 
@@ -36,21 +35,62 @@ General selector
   box-sizing: border-box;
   font-family: $font-family;
 }
-
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
 /*
 =============== 
 Header Section
 ===============
 */
 
+#therapy .therapy {
+  max-width: 1500px;
+  width: calc(100vw - 20px);
+  margin: 0 auto;
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:10px 0;
+    nav {
+      ul {
+        display: flex;
+        gap: 2rem;
+        font-size: 1.2rem;
+        li{
+          a{
+            color:$black;
+          }
+        }
+      }
+    }
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
 
+      &-img {
+        img {
+          border-radius: 50%;
+        }
+      }
+      span{
+        font-size: 1.2rem;
+      }
+    }
+  }
 
-
-
-
-
-/*
-=============== 
-Hero Section
-===============
-*/
+  /*
+  =============== 
+  Hero Section
+  ===============
+  */
+  #hero .hero {
+    height:50vh;
+    background: linear-gradient(0deg, rgba(232,239,241,1),  50%,  rgba(255,255,255,1)50%);
+  }
+}
