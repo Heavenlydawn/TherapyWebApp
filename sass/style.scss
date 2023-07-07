@@ -643,15 +643,58 @@ footer {
   Blog Section
   ===============
   */
-  #therapy .therapy{
-    #blog .blog{
-      &_header{
-        text-align: center;
-        padding: 50px;
-        h3{
-          font-size: 3rem;
-          font-weight: 500;
+#therapy .therapy {
+  #blog .blog {
+    background: #f0eded;
+    &_header {
+      text-align: center;
+      padding: 50px;
+      h3 {
+        font-size: 3rem;
+        font-weight: 500;
+      }
+    }
+    &_posts {
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 2% auto;
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    &_cards {
+      width: 100%;
+      margin: 0 auto;
+      .blog_card {
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        &_img {
+        }
+        &_content {
+          width: 500px;
+          background: $neutral;
+          padding: 30px;
+          .user{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 1.2rem;
+          }
+          .content{
+            h3{
+              font-size: 2.5rem;
+              font-weight: 500;
+              a{
+                color: $black;
+              }
+            }
+          }
         }
       }
     }
   }
+}
