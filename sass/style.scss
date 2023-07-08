@@ -108,30 +108,28 @@ Header Section
       .bars {
         display: block;
         cursor: pointer;
-        
+
         transition: var(--transition);
       }
       nav {
         ul {
           display: none;
-          // display: block;
-          animation: slideInFromLeft 1s ease-in;
+          animation: slideInFromTop 1s ease-in;
         }
-        ul.active{
+        ul.active {
           display: block;
         }
-     
       }
       .user {
         justify-content: space-between;
         width: 100%;
 
         &-img {
-          > img{
+          > img {
             display: none;
           }
           display: flex;
-          justify-content:flex-end;
+          justify-content: flex-end;
           width: 100%;
         }
         span {
@@ -570,24 +568,24 @@ footer {
   Media Query
   ===============
   */
-  @media screen and (max-width:500px) {
-    text-align: left;
-    padding: 10px;
-    height: 70vh;
-    &_header {
-      h3 {
-        font-size: 2rem;
+    @media screen and (max-width: 500px) {
+      text-align: left;
+      padding: 10px;
+      height: 70vh;
+      &_header {
+        h3 {
+          font-size: 2rem;
+        }
+      }
+      &_content {
+        width: 70%;
+        margin: 0 auto;
+        p {
+          font-size: 1.2rem;
+          line-height: 35px;
+        }
       }
     }
-    &_content {
-      width: 70%;
-      margin: 0 auto;
-      p {
-        font-size: 1.2rem;
-        line-height: 35px;
-      }
-    }
-  }
   }
 }
 
@@ -639,7 +637,7 @@ footer {
     Media Query
     ===============
     */
-    @media screen and (max-width:500px) {
+    @media screen and (max-width: 500px) {
       padding: 20px;
       &_header {
         h3 {
@@ -652,12 +650,12 @@ footer {
 
       &_card {
         flex-direction: column;
-      &_img{
-        img{
-          width: 100%;
-          height: 100%;
+        &_img {
+          img {
+            width: 100%;
+            height: 100%;
+          }
         }
-      }
       }
     }
   }
@@ -740,7 +738,13 @@ footer {
         display: flex;
         justify-content: center;
         margin-top: 5%;
+        height: 350px;
         &_img {
+          height: 100%;
+          img {
+            height: 100%;
+            width: 100%;
+          }
         }
         &_content {
           width: 500px;
@@ -754,79 +758,98 @@ footer {
           }
           .content {
             h3 {
-              font-size: 2.5rem;
+              font-size: 1.8rem;
               font-weight: 500;
+              margin: 20px 0;
               a {
                 color: $black;
                 &:hover {
                   color: #899da3;
                 }
               }
-              p {
-                font-size: 1.2rem;
-                line-height: 25px;
+            }
+            p {
+              font-size: 1.2rem;
+              line-height: 25px;
+              margin-bottom: 40px;
+            }
+          }
+          .border {
+            width: 100%;
+            border-top: 1px solid $black;
+            .details {
+              display: flex;
+              justify-content: space-between;
+              .views {
+                display: flex;
+                gap: 2rem;
+              }
+              .heart {
+                cursor: pointer;
               }
             }
           }
         }
       }
     }
+
+  }
+  /*
+=============== 
+Media  Query
+===============
+*/
+  &_header {
+    h3 {
+      font-size: 2rem;
+    }
+  }
+  &_posts {
+    width: 100%;
+    padding: 10px;
+  }
+
+  &_cards {
+    .blog_card {
+      height: auto;
+      flex-direction: column;
+      &_content {
+        width: auto;
+      }
+    }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Animations */
 @keyframes slideInFromLeft {
-  0%{
-      transform: translateX(-100%);
+  0% {
+    transform: translateX(-100%);
   }
-  100%{
-      transform: translateX(0%);
+  100% {
+    transform: translateX(0%);
   }
 }
 @keyframes slideInFromRight {
-  0%{
-      transform: translateX( 100%);
+  0% {
+    transform: translateX(100%);
   }
-  100%{
-      transform: translateX(0%);
+  100% {
+    transform: translateX(0%);
   }
 }
 @keyframes slideInFromTop {
-  0%{
-      transform: translateY( -100%);
+  0% {
+    transform: translateY(-100%);
   }
-  100%{
-      transform: translateX(0%);
+  100% {
+    transform: translateX(0%);
   }
 }
 @keyframes slideInFromBottom {
-  0%{
-      transform: translateY( 100%);
+  0% {
+    transform: translateY(100%);
   }
-  100%{
-      transform: translateX(0%);
+  100% {
+    transform: translateX(0%);
   }
 }
