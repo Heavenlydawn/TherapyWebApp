@@ -21,6 +21,7 @@ $esteem_4: #b6d1d9;
 $esteem_5: #e8eff1;
 $bg_testimonial: #fadcd6;
 $bg_footer: #e8eff1;
+$transition: all 0.3s linear;
 
 /*
 =============== 
@@ -102,22 +103,35 @@ Header Section
 
   @media screen and (max-width: 500px) {
     header {
+      justify-content: start;
+      align-items: start;
       .bars {
         display: block;
+        cursor: pointer;
+        
+        transition: var(--transition);
       }
       nav {
         ul {
           display: none;
+          // display: block;
+          animation: slideInFromLeft 1s ease-in;
         }
+        ul.active{
+          display: block;
+        }
+     
       }
       .user {
         justify-content: space-between;
         width: 100%;
 
         &-img {
+          > img{
+            display: none;
+          }
           display: flex;
-          justify-content: space-between;
-          gap: 5rem;
+          justify-content:flex-end;
           width: 100%;
         }
         span {
@@ -556,19 +570,24 @@ footer {
   Media Query
   ===============
   */
-    @media screen and (max-width: 500px) {
-      text-align: left;
-      padding: 10px;
-      height: auto;
-      &_header {
-        h3 {
-          font-size: 2rem;
-        }
-      }
-      &_content {
-        width: 100%;
+  @media screen and (max-width:500px) {
+    text-align: left;
+    padding: 10px;
+    height: 70vh;
+    &_header {
+      h3 {
+        font-size: 2rem;
       }
     }
+    &_content {
+      width: 70%;
+      margin: 0 auto;
+      p {
+        font-size: 1.2rem;
+        line-height: 35px;
+      }
+    }
+  }
   }
 }
 
@@ -620,7 +639,7 @@ footer {
     Media Query
     ===============
     */
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width:500px) {
       padding: 20px;
       &_header {
         h3 {
@@ -633,12 +652,12 @@ footer {
 
       &_card {
         flex-direction: column;
-        &_img {
-          img {
-            width: 100%;
-            height: 100%;
-          }
+      &_img{
+        img{
+          width: 100%;
+          height: 100%;
         }
+      }
       }
     }
   }
@@ -752,5 +771,62 @@ footer {
         }
       }
     }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Animations */
+@keyframes slideInFromLeft {
+  0%{
+      transform: translateX(-100%);
+  }
+  100%{
+      transform: translateX(0%);
+  }
+}
+@keyframes slideInFromRight {
+  0%{
+      transform: translateX( 100%);
+  }
+  100%{
+      transform: translateX(0%);
+  }
+}
+@keyframes slideInFromTop {
+  0%{
+      transform: translateY( -100%);
+  }
+  100%{
+      transform: translateX(0%);
+  }
+}
+@keyframes slideInFromBottom {
+  0%{
+      transform: translateY( 100%);
+  }
+  100%{
+      transform: translateX(0%);
   }
 }
