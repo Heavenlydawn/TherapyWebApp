@@ -626,15 +626,13 @@ footer p {
   Blog Section
   ===============
   */
-#therapy .therapy {
+#therapy .therapy #blog .blog {
+  background: #f0eded;
   /*
   =============== 
   Media  Query
   ===============
   */
-}
-#therapy .therapy #blog .blog {
-  background: #f0eded;
 }
 #therapy .therapy #blog .blog_header {
   text-align: center;
@@ -713,19 +711,190 @@ footer p {
 #therapy .therapy #blog .blog_cards .blog_card_content .border .details .heart {
   cursor: pointer;
 }
-#therapy .therapy_header h3 {
+@media screen and (max-width: 500px) {
+  #therapy .therapy #blog .blog_header h3 {
+    font-size: 2rem;
+  }
+  #therapy .therapy #blog .blog_posts {
+    width: 100%;
+    padding: 10px;
+  }
+  #therapy .therapy #blog .blog_cards .blog_card {
+    height: auto;
+    flex-direction: column;
+  }
+  #therapy .therapy #blog .blog_cards .blog_card_content {
+    width: auto;
+  }
+}
+
+/*
+  =============== 
+  Blog_1 Section
+  ===============
+  */
+#therapy .therapy #blog .blog_1 {
+  width: 40%;
+  margin: 0 auto;
+}
+#therapy .therapy #blog .blog_1 .user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  margin: 5% 0;
+}
+#therapy .therapy #blog .blog_1_title {
+  margin: 3% 0;
+}
+#therapy .therapy #blog .blog_1_title h2 {
+  font-size: 3rem;
+  margin-bottom: 3%;
+}
+#therapy .therapy #blog .blog_1_title p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 30px;
+}
+#therapy .therapy #blog .blog_1_img {
+  width: 100%;
+  height: 100%;
+}
+#therapy .therapy #blog .blog_1_img img {
+  width: 100%;
+  height: 100%;
+}
+#therapy .therapy #blog .blog_1_content p {
+  font-size: 1.5rem;
+  line-height: 30px;
+  margin: 3% 0;
+}
+#therapy .therapy #blog .blog_1_content .side_bar {
+  height: 120px;
+  border-left: 2px solid #899da3;
+  margin: 5% 0;
+}
+#therapy .therapy #blog .blog_1_content .side_bar h3 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  padding-left: 20px;
+  line-height: 30px;
+}
+#therapy .therapy #blog .blog_1_content .details h2 {
+  font-size: 3rem;
+  margin: 3% 0;
+}
+#therapy .therapy #blog .blog_1_content .details p {
+  margin: 2% 0;
+}
+#therapy .therapy #blog .blog_socials {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #899da3;
+  border-bottom: 1px solid #899da3;
+}
+#therapy .therapy #blog .blog_socials .socials {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 20px;
+}
+#therapy .therapy #blog .blog_socials .feedback {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#therapy .therapy #blog .blog_socials .feedback_count {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#therapy .therapy .more_blog {
+  width: 50%;
+  margin: 5% auto;
+}
+#therapy .therapy .more_blog box-icon,
+#therapy .therapy .more_blog svg {
+  cursor: pointer;
+}
+#therapy .therapy .more_blog_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3% 0;
+}
+#therapy .therapy .more_blog_header h3 {
+  font-weight: 500;
   font-size: 2rem;
 }
-#therapy .therapy_posts {
+#therapy .therapy .more_blog_header p {
+  font-size: 1.4rem;
+}
+#therapy .therapy .more_blog_cards {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3rem;
+}
+#therapy .therapy .more_blog_cards .card .feedback_count {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+#therapy .therapy .more_blog_cards .card .feedback_count .count {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#therapy .therapy .more_blog_cards .card .feedback_count .count svg {
+  width: 30px;
+}
+#therapy .therapy .more_blog_cards .card .feedback_count .eye,
+#therapy .therapy .more_blog_cards .card .feedback_count .comment {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#therapy .therapy .more_blog_cards .card .feedback_count .eye p,
+#therapy .therapy .more_blog_cards .card .feedback_count .comment p {
+  font-size: 1.2rem;
+}
+#therapy .therapy .more_blog_cards .card_title {
+  margin: 5% 0;
+  padding: 0 10px;
+}
+#therapy .therapy .more_blog_cards .card_title h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+#therapy .therapy .more_blog_cards .card_title h3 a {
+  color: #000000;
+}
+#therapy .therapy .more_blog_cards .card_title h3 a:hover {
+  color: #899da3;
+}
+#therapy .therapy .comment {
+  width: 40%;
+  margin: 0 auto;
+}
+#therapy .therapy .comment h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-bottom: 1px solid #899da3;
+  padding-bottom: 20px;
+}
+#therapy .therapy .comment_input {
   width: 100%;
-  padding: 10px;
+  margin: 3% 0;
 }
-#therapy .therapy_cards .blog_card {
-  height: auto;
-  flex-direction: column;
-}
-#therapy .therapy_cards .blog_card_content {
-  width: auto;
+#therapy .therapy .comment_input input {
+  width: 100%;
+  font-size: 1.5rem;
+  border: 1px solid #899da3;
+  padding: 20px;
+  outline: none;
 }
 
 /* Animations */
