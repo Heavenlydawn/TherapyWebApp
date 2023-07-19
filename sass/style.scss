@@ -971,7 +971,7 @@ footer {
             a {
               color: $black;
 
-              &:hover{
+              &:hover {
                 color: #899da3;
               }
             }
@@ -980,19 +980,19 @@ footer {
       }
     }
   }
-  .comment{
+  .comment {
     width: 40%;
     margin: 0 auto;
-    h3{
+    h3 {
       font-size: 1.5rem;
       font-weight: 500;
       border-bottom: 1px solid #899da3;
       padding-bottom: 20px;
     }
-    &_input{
+    &_input {
       width: 100%;
       margin: 3% 0;
-      input{
+      input {
         width: 100%;
         font-size: 1.5rem;
         border: 1px solid #899da3;
