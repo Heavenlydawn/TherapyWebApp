@@ -514,6 +514,7 @@ Header Section
 footer {
   height: 5vh;
   width: 100%;
+  padding: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -830,7 +831,7 @@ footer {
 
 #therapy .therapy {
   #blog .blog {
-    padding:10px 0;
+    padding: 10px 0;
     box-icon,
     svg {
       cursor: pointer;
@@ -1003,6 +1004,70 @@ footer {
         border: 1px solid #899da3;
         padding: 20px;
         outline: none;
+      }
+    }
+  }
+  /*
+=============== 
+Media Query
+===============
+*/
+  @media screen and (max-width: 500px) {
+    #blog .blog {
+      &_1 {
+        width: 100%;
+        padding: 0 10px;
+
+        &_title {
+          h2 {
+            font-size: 2.5rem;
+          }
+        }
+        &_content {
+          .side_bar {
+            height: 350px;
+            h3 {
+              font-size: 1.5rem;
+            }
+          }
+          .details {
+            h2 {
+              font-size: 2.5rem;
+            }
+          }
+        }
+      }
+      &_socials {
+        width: 100%;
+        flex-direction: column;
+      }
+    }
+    .more_blog {
+      width: 100%;
+      &_header {
+        h3 {
+          font-size: 1.5rem;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+      }
+      &_cards {
+        flex-direction: column;
+      }
+    }
+    .comment {
+      width: 100%;
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        border-bottom: 1px solid #899da3;
+        padding-bottom: 20px;
+      }
+      &_input {
+        input {
+          font-size: 1.3rem;
+        }
       }
     }
   }
