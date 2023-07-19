@@ -830,6 +830,11 @@ footer {
 
 #therapy .therapy {
   #blog .blog {
+    padding:10px 0;
+    box-icon,
+    svg {
+      cursor: pointer;
+    }
     &_1 {
       width: 40%;
       margin: 0 auto;

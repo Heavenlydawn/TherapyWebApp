@@ -733,6 +733,13 @@ footer p {
   Blog_1 Section
   ===============
   */
+#therapy .therapy #blog .blog {
+  padding: 10px 0;
+}
+#therapy .therapy #blog .blog box-icon,
+#therapy .therapy #blog .blog svg {
+  cursor: pointer;
+}
 #therapy .therapy #blog .blog_1 {
   width: 40%;
   margin: 0 auto;
